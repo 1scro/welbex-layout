@@ -2,7 +2,7 @@
   "name": "welbex-layout",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://1scro.github.io/welbes-layout",
+  "homepage": "https://1scro.github.io/welbex-layout",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
