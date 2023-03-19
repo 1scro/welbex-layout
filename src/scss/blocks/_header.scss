@@ -1,0 +1,72 @@
+.header {
+  position: relative;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: center;
+    padding-top: 57px;
+
+    @media (max-width: 1060px) {
+      align-items: flex-start;
+    }
+
+    @media (max-width: 900px) {
+      display: block;
+    }
+
+    @media (max-width: 740px) {
+      padding-top: 36px;
+    }
+
+    @media (max-width: 320px) {
+      padding: 20px 16px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 53px;
+  }
+
+  &__logo {
+    @media (max-width: 740px) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    height: 19px;
+    @media (max-width: 740px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__contacts {
+    @media (max-width: 1060px) {
+      margin-top: 4px;
+    }
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 259px;
+    height: 259px;
+    left: 41%;
+    top: -154px;
+    background: #833ab4;
+    border-radius: 50%;
+    opacity: 0.5;
+    filter: blur(196px);
+    @media (max-width: 320px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.logo {
+  display: inline-block;
+  flex: 0 0 auto;
+  position: relative;
+
+  &__img {
+  }
+
+  &__title {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    width: 140px;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}

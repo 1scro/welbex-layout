@@ -1,0 +1,21 @@
+.copyright {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+
+  &__text {
+    margin-bottom: 5px;
+  }
+
+  &__link {
+    color: $text-color;
+  }
+
+  &__link:link {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 680px) {
+    text-align: left;
+  }
+}

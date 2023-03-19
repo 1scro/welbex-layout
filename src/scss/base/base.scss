@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Montserrat:wght@300;400&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1170px;
+}
+
+.title-1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.2;
+  @media (max-width: 410px) {
+    font-size: 36px;
+  }
+}
+
+.title-2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.title-3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.heading-footer {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: $footer-title;
+
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+
+  &--contacts {
+    margin-bottom: 0;
+  }
+}
+
+.btn {
+  width: 262px;
+  padding: 21px 34px;
+  background: $btn-bg;
+}
+
+.none {
+  display: none;
+}

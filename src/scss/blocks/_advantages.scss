@@ -1,0 +1,112 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 300px;
+  text-align: right;
+
+  &-list {
+    margin-top: 40px;
+    max-width: 300px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-weight: 500;
+
+    &__item {
+      position: relative;
+      display: block;
+      width: 135px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.2;
+
+      h3 {
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin-top: 6px;
+        line-height: 1.25;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      span {
+        display: block;
+        width: 10px;
+        height: 1px;
+        background: linear-gradient(45deg, #fcb045 35%, #fd1d1d);
+      }
+
+      @media (max-width: 320px) {
+        display: flex;
+        gap: 5px;
+        width: auto;
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+    }
+
+    @media (max-width: 320px) {
+      margin-top: 0;
+      display: flex;
+      gap: 14px;
+      flex-direction: column;
+      white-space: nowrap;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    background: linear-gradient(45deg, #fcb045 35%, #fd1d1d);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  span {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: transparent;
+    @media (max-width: 320px) {
+      text-transform: none;
+      letter-spacing: normal;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    margin-top: 60px;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      top: 2px;
+    }
+  }
+
+  .advantages__inner {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  @media (max-width: 740px) {
+    text-align: left;
+    align-items: flex-start;
+  }
+}

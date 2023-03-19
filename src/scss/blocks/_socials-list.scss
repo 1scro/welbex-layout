@@ -1,0 +1,22 @@
+.socials-list {
+  display: flex;
+  gap: 30px;
+  height: 20px;
+
+  &__item svg {
+    transition: transform 0.1s ease-in;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 320px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &--footer {
+    gap: 10px;
+  }
+}
